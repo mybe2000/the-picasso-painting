@@ -25,7 +25,7 @@ h1 {
   margin: 50px;
 }
 
-.sun2 {
+.sun:nth-child(2) {
   position: absolute;
   background-color: aquamarine;
   height: 70px;
@@ -35,8 +35,9 @@ h1 {
   z-index: 0;
 }
 
-.sun3 {
+.sun:nth-child(3) {
   position: absolute;
+  background-color: pink;
   z-index: 4;
   width: 120px;
   height: 75px;
@@ -83,9 +84,8 @@ form {
   padding: 10px;
 }
 
-@media (min-width: 300px) {
-  body {
-    margin: 0 auto;
-    padding: 0;
+@media (max-width: 300px) {
+  .line {
+    background-color: red;
   }
 }
